@@ -9,7 +9,7 @@ spring:
         dialect: "org.hibernate.dialect.PostgreSQLDialect"
   datasource:
     platform: "postgres"
-    url: "jdbc:postgresql://database:5432/eagle_eye_local"
+    url: "jdbc:postgresql://database:5433/eagle_eye_local"
     username: "postgres"
     password: "p0stgr@s"
     testwhileIdle: "true"
