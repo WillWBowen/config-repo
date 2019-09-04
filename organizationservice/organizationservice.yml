@@ -1,0 +1,26 @@
+tracer:
+  property: "I AM THE DEFAULT Organization config"
+spring:
+  jpa:
+    database: "POSTGRESQL"
+    show-sql: "true"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.PostgreSQLDialect"
+  datasource:
+    platform: "postgres"
+    url: "jdbc:postgresql://database:5433/eagle_eye_local"
+    username: "postgres"
+    password: "{cipher}7468b19e9eb4edc06dc2be791865de254ed43911fd712e773614ae9e86887e4f"
+    testwhileIdle: "true"
+    validationQuery: "SELECT 1"
+  database:
+    driverClassName: "org.postgresql.Driver"
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: https://localhost:8761/eureka/
