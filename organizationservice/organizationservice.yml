@@ -1,4 +1,4 @@
-tracer:
+example:
   property: "I AM THE DEFAULT Organization config"
 spring:
   jpa:
