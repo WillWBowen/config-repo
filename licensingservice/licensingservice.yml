@@ -11,7 +11,7 @@ spring:
     platform: "postgres"
     url: "jdbc:postgresql://database:5433/eagle_eye_local"
     username: "postgres"
-    password: "p0stgr@s"
+    password: "{cipher}7468b19e9eb4edc06dc2be791865de254ed43911fd712e773614ae9e86887e4f"
     testwhileIdle: "true"
     validationQuery: "SELECT 1"
   database:
