@@ -7,7 +7,7 @@ spring:
         dialect: "org.hibernate.dialect.MySQL8Dialect"
   datasource:
     url: "jdbc:mysql://database:3306/salonapidb"
-    username: "root"
-    password: "root"
+    username: "salondbuser"
+    password: "ThePassword"
 signing:
   key: "9as6f5das6fyda9e5"
