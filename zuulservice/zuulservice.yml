@@ -2,7 +2,18 @@ zuul:
   prefix: /api
   ignored-services: '*'
   routes:
-    organizationservice: /organization/**
-    licensingservice: /licensing/**
+    customerservice: /customer/**
+    authenticationservice: /auth/**
   debug:
     request: true
+  sensitiveHeaders: Cookie,Set-Cookie
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2500
+
+signing:
+  key: "9as6f5das6fyda9e5"

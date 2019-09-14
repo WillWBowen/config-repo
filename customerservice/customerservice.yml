@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/salonapi
+    username: 'salondbuser'
+    password: 'ThePassword'
+signing:
+  key: "9as6f5das6fyda9e5"
