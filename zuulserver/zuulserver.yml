@@ -1,4 +1,7 @@
 zuul:
+  ignored-services: '*'
+  prefix: /api
   routes:
     customerservice: /customer/**
     salonservice: /salon/**
+    configserver: /config/**
