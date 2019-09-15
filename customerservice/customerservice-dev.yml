@@ -2,13 +2,14 @@ tracer:
   property: "I AM THE DEVELOPMENT CONFIGURATION"
 spring:
   jpa:
+    hibernate:
+      ddl-auto: update
     database: "MYSQL"
     show-sql: "true"
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
   datasource:
-    platform: "mysql"
     url: jdbc:mysql://database:3306/salonapidb-dev
     username: salondbuser
     password: "{cipher}635fea1028b91819351f188adc845d6b0f405c793ca36cf7e621f8a27538f37d"
