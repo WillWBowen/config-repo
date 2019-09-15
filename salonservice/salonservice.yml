@@ -15,3 +15,5 @@ spring:
     password: "{cipher}635fea1028b91819351f188adc845d6b0f405c793ca36cf7e621f8a27538f37d"
     testWhileIdle: true
     validationQuery: SELECT 1
+signing:
+  key: "{cipher}22157947cc2e69870b6c65e09ef20410234334256a0a56afefa9ea237dd4c8dc7f5060c7e5e66da2344f33c2564501c5"
