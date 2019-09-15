@@ -4,3 +4,12 @@ zuul:
   routes:
     customerservice: /customer/**
     salonservice: /salon/**
+  debug:
+    request: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2500
