@@ -4,4 +4,3 @@ zuul:
   routes:
     customerservice: /customer/**
     salonservice: /salon/**
-    configserver: /config/**
