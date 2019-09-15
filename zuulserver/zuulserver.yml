@@ -1,0 +1,9 @@
+zuul:
+  routes:
+    customerservice: /customer/**
+    salonservice: /salon/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
