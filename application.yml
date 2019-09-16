@@ -8,8 +8,8 @@ eureka:
 security:
   oauth2:
     resource:
-      user-info-uri: http://auth-service/uaa/users/current
-      token-info-uri: http://auth-service/uaa/oauth/check_token
+      user-info-uri: http://auth/uaa/users/current
+      token-info-uri: http://auth/uaa/oauth/check_token
 
 logging:
   level:
