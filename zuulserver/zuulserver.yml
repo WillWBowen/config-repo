@@ -1,18 +1,20 @@
 zuul:
   ignored-services: '*'
-  prefix: /api
+  host:
+    connext-timeout-millis: 20000
+    socket-timeout-millis: 20000
   routes:
     customerservice: /customer/**
     salonservice: /salon/**
     authenticationservice: /auth/**
   debug:
     request: true
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 2500
+server:
+  port: 5555
 signing:
   key: "{cipher}22157947cc2e69870b6c65e09ef20410234334256a0a56afefa9ea237dd4c8dc7f5060c7e5e66da2344f33c2564501c5"
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.github.willwbowen: DEBUG
