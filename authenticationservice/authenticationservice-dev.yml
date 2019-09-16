@@ -21,3 +21,9 @@ server:
     context-path: /uaa
   port:
     8901
+
+logging:
+  level:
+    com.netflix: WARN
+    com.springframework.web: WARN
+    com.github.willwbowen: DEBUG
