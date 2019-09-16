@@ -1,17 +1,15 @@
 eureka:
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: false
   client:
-    registerWithEureka: true
-    fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eurekaserver:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 security:
   oauth2:
     resource:
-      user-info-uri: http://auth:8901/uaa/users/current
-      token-info-uri: http://auth:8901/uaa/oauth/check_token
+      user-info-uri: http://authenticationservice:8901/uaa/users/current
+      token-info-uri: http://authenticationservice:8901/uaa/oauth/check_token
 
 logging:
   level:

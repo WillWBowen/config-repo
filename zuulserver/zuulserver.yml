@@ -4,10 +4,16 @@ zuul:
     connext-timeout-millis: 20000
     socket-timeout-millis: 20000
   routes:
-    customerservice: /customer/**
-    salonservice: /salon/**
-    authenticationservice: /auth/**
-    accountservice: /accounts/**
+    authenticationservice:
+      path: /uaa/**
+      url: authenticationservice
+      stripPrefix: false
+      sensitiveHeaders:
+    accountservice:
+      path: /accounts/**
+      servicdId: accountservice
+      stripPrefix: false
+      sensitiveHeaders:
   debug:
     request: true
 server:
@@ -19,7 +25,3 @@ logging:
     com.netflix: WARN
     org.springframework.web: WARN
     com.github.willwbowen: DEBUG
-eureka:
-  client:
-    register-with-eureka: true
-    fetchRegistry: true
