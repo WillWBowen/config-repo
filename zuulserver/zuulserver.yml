@@ -18,3 +18,7 @@ logging:
     com.netflix: WARN
     org.springframework.web: WARN
     com.github.willwbowen: DEBUG
+eureka:
+  client:
+    register-with-eureka: false
+    fetchRegistry: false
