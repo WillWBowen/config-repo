@@ -15,3 +15,5 @@ spring:
     validationQuery: SELECT 1
 signing:
   key: "{cipher}22157947cc2e69870b6c65e09ef20410234334256a0a56afefa9ea237dd4c8dc7f5060c7e5e66da2344f33c2564501c5"
+server:
+  port: 8901
