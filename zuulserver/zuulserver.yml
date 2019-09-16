@@ -7,6 +7,7 @@ zuul:
     customerservice: /customer/**
     salonservice: /salon/**
     authenticationservice: /auth/**
+    accountservice: /accounts/**
   debug:
     request: true
 server:
