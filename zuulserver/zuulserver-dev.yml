@@ -1,0 +1,27 @@
+zuul:
+  ignored-services: '*'
+  host:
+    connext-timeout-millis: 20000
+    socket-timeout-millis: 20000
+  routes:
+    authenticationservice:
+      path: /uaa/**
+      url: authenticationservice
+      stripPrefix: false
+      sensitiveHeaders:
+    accountservice:
+      path: /accounts/**
+      servicdId: accountservice
+      stripPrefix: false
+      sensitiveHeaders:
+  debug:
+    request: true
+server:
+  port: 5555
+signing:
+  key: "{cipher}22157947cc2e69870b6c65e09ef20410234334256a0a56afefa9ea237dd4c8dc7f5060c7e5e66da2344f33c2564501c5"
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.github.willwbowen: DEBUG

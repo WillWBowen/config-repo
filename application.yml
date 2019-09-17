@@ -3,13 +3,13 @@ eureka:
     prefer-ip-address: false
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eurekaserver/eureka/
 
 security:
   oauth2:
     resource:
-      user-info-uri: http://localhost:5555/uaa/users/current
-      token-info-uri: http://localhost:5555/uaa/oauth/check_token
+      user-info-uri: http://authenticationservice/uaa/users/current
+      token-info-uri: http://authenticationservice/uaa/oauth/check_token
 
 logging:
   level:
