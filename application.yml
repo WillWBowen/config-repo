@@ -9,7 +9,7 @@ security:
   oauth2:
     resource:
       user-info-uri: ${AUTHSERVICE_URI}/uaa/users/current
-      token-info-uri: ${AUTHSERICE_URI}/uaa/oauth/check_token
+      token-info-uri: ${AUTHSERVICE_URI}/uaa/oauth/check_token
 
 logging:
   level:

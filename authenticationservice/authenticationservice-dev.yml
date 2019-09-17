@@ -19,8 +19,7 @@ signing:
 server:
   servlet:
     context-path: /uaa
-  port:
-    8901
+  port: 8901
 logging:
   level:
     com.netflix: WARN
