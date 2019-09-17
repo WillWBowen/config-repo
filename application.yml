@@ -3,7 +3,7 @@ eureka:
     prefer-ip-address: false
   client:
     serviceUrl:
-      defaultZone: http://${EUREKASERVER_URI}/eureka/
+      defaultZone: ${EUREKASERVER_URI}/eureka/
 
 security:
   oauth2:
