@@ -25,3 +25,10 @@ logging:
     com.netflix: WARN
     com.springframework.web: WARN
     com.github.willwbowen: DEBUG
+
+seed:
+  data:
+    username: randomuser
+    browser-client: browser
+    account-client: account-service
+    password: "{cipher}48c3990b39cece97f937ae7aba1dceb9a82027040d6913af62f9cc06cde59f45"
