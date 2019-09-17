@@ -8,8 +8,8 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
   datasource:
-    url: jdbc:mysql://database:3306/salonapidb
-    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://database:3306/salonapidb-dev
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: salondbuser
     password: "{cipher}635fea1028b91819351f188adc845d6b0f405c793ca36cf7e621f8a27538f37d"
     testWhileIdle: true
