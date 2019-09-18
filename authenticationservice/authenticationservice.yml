@@ -2,6 +2,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
+      user-new-id-generator-mappings: false
     database: "MYSQL"
     show-sql: "true"
     properties:
