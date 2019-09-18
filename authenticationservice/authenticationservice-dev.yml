@@ -1,8 +1,7 @@
 spring:
   jpa:
     hibernate:
-      ddl-auto: none
-      use-new-id-generator-mappings: false
+      ddl-auto: create
     database: "MYSQL"
     show-sql: "true"
     properties:
